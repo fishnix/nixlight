@@ -1,0 +1,10 @@
+# nixlight test configuration file
+
+title = "nixlight test config"
+timer = "86400s"
+db = "nixlight.db"
+
+[DarkSky]
+  lat = "51.894444"
+  long = "1.482500"
+  apiKey = "changeme"

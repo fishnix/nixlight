@@ -1,0 +1,10 @@
+# nixlight example configuration file
+
+title = "nixlight example config"
+timer = "10s"
+db = "nixlight.db"
+
+[DarkSky]
+  lat = "51.894444"
+  long = "1.482500"
+  apiKey = "CHANGME"
