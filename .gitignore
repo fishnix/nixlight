@@ -1,1 +1,5 @@
 example/nixlight.toml
+debug
+Gopkg.lock
+Gopkg.toml
+vendor
