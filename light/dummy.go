@@ -4,21 +4,19 @@ import (
 	"log"
 )
 
+// Dummy is a dummy light controller
 type Dummy struct {
 	Name string
 }
 
+// Start initializes the dummy light controller
 func (d *Dummy) Start() error {
 	log.Printf("Starting dummy light %s controller\n", d.Name)
-
-	if l, ok := interface{}(d).(Controller); ok {
-		log.Printf("It looks like %+v satisfies the Controller interface!", l)
-	}
-
 	return nil
 }
 
-func (d *Dummy) Brightness(b int) error {
+// SetBrightness sets the brightness level of the dummy light
+func (d *Dummy) SetBrightness(b int) error {
 	log.Printf("Setting dummy light %s's brightness to %d\n", d.Name, b)
 	return nil
 }
